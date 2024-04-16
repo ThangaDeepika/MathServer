@@ -30,12 +30,49 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
-
-
+## views.py
+```
+from django.shortcuts import render
+def surfacearea(request):
+    context = {}
+    context['area'] = "0"
+    context['r'] = "0"
+    context['h'] = "0"
+    
+    if request.method == 'POST':
+        print("POST method is used")
+        
+        print('request.POST:', request.POST)
+        
+        r = request.POST.get('radius', '0') 
+        h = request.POST.get('height', '0') 
+        print('radius =', r)
+        print('height =', h)
+        
+        area = 2 * 3.14 * int(r) * int(h) + 2*3.14*int(r)*int(r)
+        context['area'] = area
+        context['r'] = r
+        context['h'] = h
+        print('Area =', area)
+    
+    return render(request, 'app1/index.html', context)
+```
+## urls.py
+```
+from django.contrib import admin
+from django.urls import path
+from app1 import views
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('areaofsurface/',views.surfacearea,name="areaofsurface"),
+    path('',views.surfacearea,name="areaofsurfaceroot")
+]
+```
 ## SERVER SIDE PROCESSING:
-
+![Screenshot 2024-04-16 213844](https://github.com/ThangaDeepika/MathServer/assets/125663099/ad362e09-4202-4458-a02e-3c51ce8a464b)
 
 ## HOMEPAGE:
+![Screenshot 2024-04-16 212221](https://github.com/ThangaDeepika/MathServer/assets/125663099/d4be12dc-df7d-410b-8d85-6db383c2107c)
 
 
 ## RESULT:
