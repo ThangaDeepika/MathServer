@@ -69,7 +69,8 @@ urlpatterns = [
 ]
 ```
 ## SERVER SIDE PROCESSING:
-![OutputSS](https://github.com/ThangaDeepika/MathServer/assets/125663099/6b66f054-d881-47fd-842f-5b8b57f20455)
+![output1SS](https://github.com/ThangaDeepika/MathServer/assets/125663099/ffcce1ec-7925-4624-95e7-f34acf983bb9)
+
 
 ## HOMEPAGE:
 ![Screenshot 2024-04-16 223131](https://github.com/ThangaDeepika/MathServer/assets/125663099/015a4a4a-de17-4c26-be16-44d95a49ae5d)
