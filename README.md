@@ -72,8 +72,7 @@ urlpatterns = [
 ![Screenshot 2024-04-16 213844](https://github.com/ThangaDeepika/MathServer/assets/125663099/ad362e09-4202-4458-a02e-3c51ce8a464b)
 
 ## HOMEPAGE:
-![Screenshot 2024-04-16 212221](https://github.com/ThangaDeepika/MathServer/assets/125663099/d4be12dc-df7d-410b-8d85-6db383c2107c)
-
+![Screenshot 2024-04-16 214041](https://github.com/ThangaDeepika/MathServer/assets/125663099/8e430977-7434-49ed-9958-2639f15430f8)
 
 ## RESULT:
 The program for performing server side processing is completed successfully.
